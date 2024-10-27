@@ -822,15 +822,213 @@ footer {
 
 /* Dz 6 */
 
+/* Burger */
+.burger_navigation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 168px;
+}
+.burger_list .ref {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.burger_list .current {
+  color: #404bbf;
+}
+.burger_adres {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.bg_tel {
+  color: #4d5ae5;
+}
+.burger_adres .logo_list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.bg_soc_nets {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Базові стилі для мобільних пристроїв (320px) */
-@media (min-width: 320px) {
-  body {
+@media (min-width: 320px) and (max-width: 767px) {
+  .logo_navigation,
+  .adres {
+    visibility: hidden;
+  }
+  .team_card_box {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    /* max-width: 1157px;
+    min-width: 768px;
+    maring: 0 auto; */
+  }
+  .hero_title {
+    max-width: 216px;
+  }
+  .main_page {
+    padding: 72px 0;
+    max-width: 767px;
+  }
+  .cta {
+    margin-top: 72px;
+  }
+  .page_advantages .container {
+    padding-top: 0;
+  }
+  .adv_content {
+    flex-direction: column;
+    gap: 72px;
+    max-width: 767px;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+  .adv_list {
+    width: 288px;
+    /* margin: auto;
+    padding: 0; */
+  }
+  .adv_icon {
+    visibility: hidden;
+  }
+  .adv_title {
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .adv_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .team_card,
+  .portfolio_list_item {
+    margin: auto;
+  }
+  .portfolio_list_item {
+    width: 288px;
+  }
+  .adv_title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .portfolio_content {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .page_portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .foooter {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .foooter .container {
+    flex-direction: column;
+    gap: 72px;
+  }
+  .foooter_logo,
+  .footer_social_media,
+  .footer_feedback_container {
+    margin: auto;
+  }
+  .logo_f {
+    margin-left: 102px;
+  }
+  .foooter_socnets {
+    margin-left: 56px;
+  }
+  .form_feedback {
+    flex-direction: column;
+    margin: auto;
+  }
+  .form_feedback_button {
+    margin: auto;
+  }
+  .form_feedback_title {
+    margin-left: 106px;
   }
 }
 
 /* Стилі для планшетів (мінімум 768px) */
-@media (min-width: 768px) {
-  body {
+@media (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    min-width: 768px;
+    max-width: 1157px; /* Максимальна ширина контейнера */
+    padding-left: 16px; /* Внутрішній відступ зліва */
+    padding-right: 16px; /* Внутрішній відступ справа */
+  }
+  .logo {
+    margin-right: 120px;
+  }
+  .adres {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+  }
+  .main_page {
+    padding: 112px 0;
+    max-width: 1157px;
+  }
+  .cta {
+    margin-top: 36px;
+  }
+
+  .page_advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .adv_content {
+    /* width: 736px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; */
+    /* gap: 72px;
+    row-gap: 24px; */
+    /* flex-basis: calc((100% - 3 * 24px) / 4); */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1157px;
+    min-width: 768px;
+    maring: 0 auto;
+  }
+  .adv_icon {
+    visibility: hidden;
+  }
+  .adv_list {
+    width: 356px;
+  }
+  .adv_title {
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .adv_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .team_card_box {
+    /* flex-direction: column; */
+    gap: 24px;
   }
 }
 
