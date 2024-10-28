@@ -125,12 +125,8 @@ body {
 .logo_navigation {
   list-style-type: none;
   font-weight: 500;
-  /* display: flex; */
+  display: flex;
   gap: 40px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  display: none;
 }
 
 .logo_list {
@@ -191,10 +187,6 @@ address {
   /* display: flex; */
   gap: 40px;
   /* padding: 24px 0; */
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  display: none;
 }
 .mail {
   font-weight: 400;
@@ -215,7 +207,7 @@ address {
   /* display: none; */
   align-items: center;
   padding: 16px 0;
-  visibility: visible;
+  /* visibility: visible; */
 }
 .main_page {
   background: #2e2f42;
@@ -280,14 +272,15 @@ address {
 
 .adv_content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  /* align-items: flex-start; */
   justify-content: flex-start;
   flex-direction: column;
   gap: 72px;
 }
 .adv_list {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
@@ -305,8 +298,18 @@ address {
   margin-bottom: 8px;
   width: 64;
   height: 64;
-  display: none;
+  /* display: none; */
 }
+
+.adv_title_a {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: auto;
+}
+
 .adv_title {
   font-weight: 500;
   font-size: 20px;
@@ -317,6 +320,15 @@ address {
   /* text-align: center; */
   /* margin-bottom: 8px; */
 }
+.adv_text_a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  max-width: 288px;
+}
+
 .adv_text {
   font-weight: 400;
   font-size: 16px;
@@ -324,6 +336,7 @@ address {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 .soc_nets {
   display: flex;
   align-items: center;
@@ -411,6 +424,7 @@ address {
   /* flex-wrap: wrap; */
   gap: 24px;
   /* row-gap: 48px; */
+  align-items: center;
 }
 
 .portfolio_list_item:hover {
@@ -635,8 +649,13 @@ footer {
   visibility: hidden;
   pointer-events: none;
 }
-
-.modal_overlay.is-open {
+.modal_overlay_a {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal_overlay.is-open,
+.modal_overlay_a.is-open {
   /* for Js script open-close modal window */
   opacity: 1;
   visibility: visible;
@@ -856,6 +875,10 @@ footer {
 /* Dz 6 */
 
 /* Burger */
+
+.m_menu {
+  width: 320px;
+}
 .burger_navigation {
   display: flex;
   align-items: flex-start;
@@ -897,10 +920,285 @@ footer {
   justify-content: space-between;
 }
 
+/* Базові стилі для мобільних пристроїв (320px) */
+@media (min-width: 320px) and (max-width: 767px) {
+  .logo_navigation {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+  }
+  .adres {
+    list-style: none;
+    /* display: flex; */
+    gap: 40px;
+    /* padding: 24px 0; */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+  }
+  .adv_icon {
+    display: none;
+  }
+}
+
+/* Стилі для планшетів (мінімум 768px) */
+@media (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    max-width: 100%;
+    /* min-width: 768px; */
+    max-width: 1157px; /* Максимальна ширина контейнера */
+    padding-left: 16px; /* Внутрішній відступ зліва */
+    padding-right: 16px; /* Внутрішній відступ справа */
+  }
+  .logo {
+    margin-right: 120px;
+  }
+  .adres {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .heder_icon {
+    display: none;
+  }
+
+  .main_page {
+    padding: 112px 0;
+    /* max-width: 1157px; */
+    max-width: 100%;
+  }
+
+  .hero_title {
+    font-weight: 700;
+    font-size: 56px;
+    max-width: 496px;
+  }
+
+  .cta {
+    margin-top: 36px;
+  }
+
+  .page_advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .adv_content {
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .adv_icon {
+    display: none;
+  }
+  .adv_list {
+    width: 356px;
+  }
+  .adv_title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .adv_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .about .container {
+    max-width: 768px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .team_card_box {
+    max-width: 768px;
+    flex-direction: row;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 64px;
+    /* justify-items: center; */
+  }
+}
+
+/* Приклад підключення ретини х2 для таблета */
+.main-page-section {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-image-tablet.jpg);
+}
+@media (min-resolution: 192dpi) {
+  .main-page-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-image-tablet-x2.jpg);
+  }
+}
+
 /* Стилі для десктопів (мінімум 1158px) */
 @media (min-width: 1158px) {
+  .container {
+    max-width: 1158px; /* Максимальна ширина контейнера */
+    padding-left: 15px; /* Внутрішній відступ зліва */
+    padding-right: 15px; /* Внутрішній відступ справа */
+    margin-left: auto; /* Центрує контейнер по горизонталі */
+    margin-right: auto; /* Центрує контейнер по горизонталі */
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .adres {
+    display: flex;
+    flex-direction: row;
+    padding: 24px 0;
+  }
+
+  .heder_icon {
+    display: none;
+  }
+
+  .main_page {
+    padding: 188px 0;
+    max-width: 100%;
+  }
+
+  .hero_title {
+    font-weight: 700;
+    font-size: 56px;
+    max-width: 496px;
+  }
+
+  .cta {
+    margin-top: 48px;
+  }
+
+  .page_advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .adv_content {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .adv_list {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  .adv_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+    width: 64;
+    height: 64;
+  }
+
+  .adv_title_a {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .adv_text_a {
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 264px;
+  }
+
+  .adv_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  .adv_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .team_card_box {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .portfolio_content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+    align-items: center;
+  }
   .portfolio_list_item {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .foooter .container {
+    /* align-items: baseline; */
+    flex-direction: row;
+    gap: 72px;
+  }
+
+  .logo_f {
+    margin-left: 0;
+  }
+
+  .foooter_socnets {
+    text-align: left;
+  }
+
+  .form_feedback_title {
+    text-align: left;
+  }
+
+  .form_feedback {
+    flex-direction: row;
+  }
+
+  .form_feedback_button {
+    margin: 0;
+  }
+}
+
+/* Приклад Підключення фонової картинки з градієнтов у Герой  */
+@media screen and (min-width: 1158px) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-2x.jpg);
+    }
   }
 }
