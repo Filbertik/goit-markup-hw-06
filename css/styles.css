@@ -955,6 +955,11 @@ footer {
   .logo {
     margin-right: 120px;
   }
+
+  .ref {
+    padding: 24px 0;
+  }
+
   .adres {
     display: flex;
     flex-direction: column;
@@ -1025,6 +1030,52 @@ footer {
     row-gap: 64px;
     /* justify-items: center; */
   }
+
+  .page_portfolio {
+    margin: auto;
+  }
+
+  .portfolio_content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+    align-items: center;
+  }
+
+  .foooter .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+    padding-left: 108px;
+    justify-content: flex-start;
+  }
+
+  .foooter_socnets {
+    text-align: start;
+  }
+
+  .form_feedback {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .foooter_logo {
+    margin-right: 120px;
+    margin-left: 0;
+  }
+  .logo_f {
+    margin-left: 0;
+  }
+
+  .form_feedback_title {
+    text-align: start;
+  }
+
+  .footer_feedback_container {
+    margin-left: 0;
+  }
 }
 
 /* Приклад підключення ретини х2 для таблета */
@@ -1057,6 +1108,10 @@ footer {
 
   .logo {
     margin-right: 76px;
+  }
+
+  .ref {
+    padding: 24px 0;
   }
 
   .adres {
