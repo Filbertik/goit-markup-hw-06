@@ -87,7 +87,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  /* margin-right: 76px; */
 }
 .logo_f {
   font-family: "Raleway", sans-serif;
@@ -184,9 +183,8 @@ address {
 }
 .adres {
   list-style: none;
-  /* display: flex; */
+
   gap: 40px;
-  /* padding: 24px 0; */
 }
 .mail {
   font-weight: 400;
@@ -204,10 +202,9 @@ address {
 }
 .heder_icon {
   display: flex;
-  /* display: none; */
+
   align-items: center;
   padding: 16px 0;
-  /* visibility: visible; */
 }
 .main_page {
   background: #2e2f42;
@@ -222,7 +219,7 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* max-width: 1440px; */
+
   max-width: 100%;
   margin: auto;
 }
@@ -298,7 +295,6 @@ address {
   margin-bottom: 8px;
   width: 64;
   height: 64;
-  /* display: none; */
 }
 
 .adv_title_a {
@@ -317,8 +313,6 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin: auto;
-  /* text-align: center; */
-  /* margin-bottom: 8px; */
 }
 .adv_text_a {
   font-weight: 500;
@@ -343,7 +337,7 @@ address {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
   margin-top: 8px;
   padding-left: 0;
 }
@@ -374,8 +368,7 @@ address {
 }
 .about {
   background: #f4f4fd;
-  /* padding-top: 120px; */
-  /* padding-bottom: 120px; */
+
   padding: 96px 0;
 }
 
@@ -413,17 +406,15 @@ address {
 }
 
 .page_portfolio {
-  /* padding-top: 120px; */
-  /* padding-bottom: 120px; */
   padding: 96px 0;
 }
 
 .portfolio_content {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
+
   gap: 24px;
-  /* row-gap: 48px; */
+
   align-items: center;
 }
 
@@ -473,8 +464,7 @@ footer {
 }
 .foooter {
   background: #2e2f42;
-  /* padding-top: 100px; */
-  /* padding-bottom: 100px; */
+
   padding: 96px 0;
 }
 
@@ -501,7 +491,7 @@ footer {
 }
 .foooter .container {
   display: flex;
-  /* align-items: baseline; */
+
   flex-direction: column;
   gap: 72px;
 }
@@ -559,7 +549,6 @@ footer {
 }
 
 .form_feedback {
-  /* max-width: 453px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -579,10 +568,9 @@ footer {
   width: 264px;
   height: 40px;
   background-color: transparent;
-  /* background-color: #2e2f42; */
+
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  /* margin-top: 16px; */
-  /* margin-right: 24px;  edit*/
+
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -600,16 +588,16 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: row; */
+
   gap: 16px;
   border-radius: 4px;
-  /* padding: 8px 24px; */
+
   width: 165px;
   height: 40px;
   background-color: #4d5ae5;
-  /* background-color: #4d5ae5; */
+
   cursor: pointer;
-  /* margin-top: 40px; */
+
   min-width: 165px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -729,16 +717,6 @@ footer {
   line-height: 1.17;
 }
 
-/* .modal_name_lable {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  font-weight: 400;
-  line-height: 1.17;
-} */
-
 .modal_name_input {
   position: relative;
 }
@@ -753,10 +731,6 @@ footer {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal_name_input:focus {
-  border-color: #4d5ae5;
-} */
-
 .modal_input:focus {
   border-color: #4d5ae5;
 }
@@ -764,9 +738,7 @@ footer {
 .modal_input:focus + .modal_input_icon {
   fill: #4d5ae5;
 }
-/* .modal_input_icon:focus {
-  fill: #4d5ae5;
-} */
+
 .modal_input_icon {
   left: 16px;
   top: 50%;
@@ -774,10 +746,6 @@ footer {
   position: absolute;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .modal_input_icon_ch {
-  fill: #f4f4fd;
-} */
 
 .modal_comment_container {
   margin-bottom: 16px;
@@ -815,10 +783,6 @@ footer {
   color: #8e8f99;
 }
 .upp_ch {
-  /* line-height: 1.33333;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: #4d5ae5; */
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -837,16 +801,6 @@ footer {
   border: none;
   fill: #f4f4fd;
 }
-
-/* .upp_input:checked + .modal_input_icon_ch {
-  fill: #f4f4fd;;
-} */
-
-/* .upp_input:checked .upp_ch {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-} */
 
 .upp_a {
   color: #4d5ae5;
@@ -922,6 +876,30 @@ footer {
 
 /* Базові стилі для мобільних пристроїв (320px) */
 @media (min-width: 320px) and (max-width: 767px) {
+  /* Підключення ретини х2 для mobile */
+
+  @media screen and (min-width: 320px) {
+    .main_page {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-mobile-x1.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .main_page {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/Dark-bg-mobile-x2.jpg);
+      }
+    }
+  }
+
   .logo_navigation {
     opacity: 0;
     visibility: hidden;
@@ -930,9 +908,9 @@ footer {
   }
   .adres {
     list-style: none;
-    /* display: flex; */
+
     gap: 40px;
-    /* padding: 24px 0; */
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -945,6 +923,30 @@ footer {
 
 /* Стилі для планшетів (мінімум 768px) */
 @media (min-width: 768px) and (max-width: 1157px) {
+  /* Підключення ретини х2 для таблета */
+
+  @media screen and (min-width: 768px) {
+    .main_page {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-tablet-x1.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .main_page {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/Dark-bg-tablet-x2.jpg);
+      }
+    }
+  }
+
   .container {
     max-width: 100%;
     /* min-width: 768px; */
@@ -973,7 +975,7 @@ footer {
 
   .main_page {
     padding: 112px 0;
-    /* max-width: 1157px; */
+
     max-width: 100%;
   }
 
@@ -1024,11 +1026,10 @@ footer {
   .team_card_box {
     max-width: 768px;
     flex-direction: row;
-    /* align-items: center; */
+
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 64px;
-    /* justify-items: center; */
   }
 
   .page_portfolio {
@@ -1078,26 +1079,31 @@ footer {
   }
 }
 
-/* Приклад підключення ретини х2 для таблета */
-.main-page-section {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-image-tablet.jpg);
-}
-@media (min-resolution: 192dpi) {
-  .main-page-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-image-tablet-x2.jpg);
-  }
-}
-
 /* Стилі для десктопів (мінімум 1158px) */
 @media (min-width: 1158px) {
+  /* Підключення фонової картинки з градієнтоm у Герой  */
+  @media screen and (min-width: 1158px) {
+    .main_page {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-x1.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .main_page {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/people-office-x2.jpg);
+      }
+    }
+  }
+
   .container {
     max-width: 1158px; /* Максимальна ширина контейнера */
     padding-left: 15px; /* Внутрішній відступ зліва */
@@ -1209,7 +1215,6 @@ footer {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .foooter .container {
-    /* align-items: baseline; */
     flex-direction: row;
     gap: 72px;
   }
@@ -1232,28 +1237,5 @@ footer {
 
   .form_feedback_button {
     margin: 0;
-  }
-}
-
-/* Приклад Підключення фонової картинки з градієнтов у Герой  */
-@media screen and (min-width: 1158px) {
-  .hero-wrap {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bg.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero-wrap {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/hero-bg-2x.jpg);
-    }
   }
 }
