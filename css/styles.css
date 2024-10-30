@@ -303,7 +303,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .adv_title {
@@ -387,15 +387,15 @@ address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 72px;
 }
 .team_card {
   background-color: #ffffff;
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 428px;
+  /* padding: 0px 0px 32px 0px; */
+  /* width: 264px; */
+  /* height: 428px; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -412,8 +412,8 @@ address {
 .portfolio_content {
   display: flex;
   flex-direction: column;
-
-  gap: 24px;
+  gap: 48px;
+  /* gap: 24px; */
 
   align-items: center;
 }
@@ -496,8 +496,8 @@ footer {
   gap: 72px;
 }
 .foooter_logo {
-  margin-right: 120px;
-  margin: auto;
+  /* margin-right: 120px; */
+  /* margin: auto; */
 }
 
 .foooter_socnets {
@@ -526,17 +526,13 @@ footer {
 /* Css DZ5 */
 
 .footer_social_media {
-  margin-right: 80px;
+  /* margin-right: 80px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin: auto;
-}
-
-.footer_feedback_container {
-  margin: auto;
+  /* margin: auto; */
 }
 
 .form_feedback_title {
@@ -919,6 +915,20 @@ footer {
   .adv_icon {
     display: none;
   }
+  .adv_title_a {
+    margin: auto;
+  }
+  .modal_overlay_a {
+    width: 288px;
+  }
+  .modal {
+    /* width: 288px; */
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    height: 100%;
+    width: 100%;
+  }
 }
 
 /* Стилі для планшетів (мінімум 768px) */
@@ -954,6 +964,10 @@ footer {
     padding-left: 16px; /* Внутрішній відступ зліва */
     padding-right: 16px; /* Внутрішній відступ справа */
   }
+
+  .modal_overlay_a {
+    display: none;
+  }
   .logo {
     margin-right: 120px;
   }
@@ -966,7 +980,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 16px 0;
+    /* padding: 16px 0; */
   }
 
   .heder_icon {
@@ -1000,6 +1014,7 @@ footer {
     row-gap: 72px;
     flex-direction: row;
     justify-content: center;
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   .adv_icon {
@@ -1019,17 +1034,21 @@ footer {
     letter-spacing: 0.02em;
   }
   .about .container {
-    max-width: 768px;
-    padding-left: 80px;
-    padding-right: 80px;
+    width: 584px;
+    /* max-width: 768px; */
+    /* padding-left: 80px; */
+    /* padding-right: 80px; */
   }
   .team_card_box {
     max-width: 768px;
     flex-direction: row;
-
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 64px;
+    justify-content: center;
+  }
+  .team_card {
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   .page_portfolio {
@@ -1045,11 +1064,12 @@ footer {
   }
 
   .foooter .container {
+    width: 584px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
-    padding-left: 108px;
+    /* padding-left: 108px; */
     justify-content: flex-start;
   }
 
@@ -1063,7 +1083,7 @@ footer {
   }
 
   .foooter_logo {
-    margin-right: 120px;
+    /* margin-right: 120px; */
     margin-left: 0;
   }
   .logo_f {
@@ -1110,6 +1130,10 @@ footer {
     padding-right: 15px; /* Внутрішній відступ справа */
     margin-left: auto; /* Центрує контейнер по горизонталі */
     margin-right: auto; /* Центрує контейнер по горизонталі */
+  }
+
+  .modal_overlay_a {
+    display: none;
   }
 
   .logo {
@@ -1172,6 +1196,7 @@ footer {
   }
 
   .adv_title_a {
+    /* text-align: start; */
     font-weight: 500;
     font-size: 20px;
   }
@@ -1197,11 +1222,18 @@ footer {
     letter-spacing: 0.02em;
     color: #434455;
   }
+  .about {
+    padding: 120px 0;
+  }
 
   .team_card_box {
     flex-direction: row;
     align-items: center;
     gap: 24px;
+  }
+
+  .page_portfolio {
+    padding: 120px 0;
   }
   .portfolio_content {
     flex-direction: row;
@@ -1222,6 +1254,19 @@ footer {
   .logo_f {
     margin-left: 0;
   }
+  .foooter_logo {
+    margin-right: 120px;
+    margin: auto;
+  }
+  .footer_social_media {
+    margin-right: 80px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin: auto;
+  }
 
   .foooter_socnets {
     text-align: left;
@@ -1229,6 +1274,9 @@ footer {
 
   .form_feedback_title {
     text-align: left;
+  }
+  .footer_feedback_container {
+    margin: auto;
   }
 
   .form_feedback {
