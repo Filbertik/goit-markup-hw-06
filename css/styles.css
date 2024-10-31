@@ -495,10 +495,6 @@ footer {
   flex-direction: column;
   gap: 72px;
 }
-.foooter_logo {
-  /* margin-right: 120px; */
-  /* margin: auto; */
-}
 
 .foooter_socnets {
   margin-bottom: 16px;
@@ -921,13 +917,23 @@ footer {
   .modal_overlay_a {
     width: 288px;
   }
-  .modal {
+  .m_menu {
     /* width: 288px; */
     position: fixed;
     /* top: 0; */
     /* left: 0; */
     height: 100%;
     width: 100%;
+  }
+  .modal_overlay .modal {
+    width: 288px;
+  }
+  .upp_container {
+    width: 256px;
+  }
+
+  .form_feedback_input {
+    width: 288px;
   }
 }
 
@@ -1245,6 +1251,10 @@ footer {
   .portfolio_list_item {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .foooter {
+    padding: 100px 0;
   }
   .foooter .container {
     flex-direction: row;
